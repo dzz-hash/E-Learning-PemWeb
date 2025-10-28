@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daffa Zulfan</title>
+  <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: #000000;
+      color: white;
+      font-family: "Rubik", sans-serif;
+    }
+
+    .header {
+      position: absolute;
+      top: 30px;
+      left: 50px;
+      text-align: left;
+    }
+
+    .letter {
+      display: inline-block;
+      color: #00bfff;
+      transition: color 0.3s ease, transform 0.3s ease;
+      cursor: pointer;
+    }
+
+    .letter:hover {
+      color: #ffffff;
+      transform: scale(1.2);
+    }
+
+    .header p {
+      margin: 5px 0 0;
+      font-size: 18px;
+      color: #ccc;
+    }
+
+
+     h1.section-title {
+      font-size: 35px;
+      margin-top: 250px;
+      margin-bottom: 20px;
+      color: #00bfff;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+    }
+
+    .sosmed {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+
+    .Sosmed-card {
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 15px;
+      padding: 20px;
+      width: 250px;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+    }
+
+    .Sosmed-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 20px rgba(0, 191, 255, 0.3);
+    }
+
+    .Sosmed-card img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    button {
+      background-color: #00bfff;
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-top: 30px;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background-color: #009acd;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="header">
+    <h1>
+      <span class="letter">D</span><span class="letter">A</span><span class="letter">F</span>
+      <span class="letter">F</span><span class="letter">A</span>&nbsp;
+      <span class="letter">Z</span><span class="letter">U</span><span class="letter">L</span>
+      <span class="letter">F</span><span class="letter">A</span><span class="letter">N</span>
+    </h1>
+    <p>23552011324 | TIF-CNS B | Teknik Informatika</p>
+    <p>Halo! Saya Daffa Zulfan, Mahasiswa Teknik Informatika di Universitas Teknologi Bandung.</p>
+    <p>Di bawah ini adalah akun media sosial saya.</p>
+    <p>Klik salah satu kartu untuk mengetahui lebih lanjut atau hubungi saya langsung!</p>
+  </header>
+
+  
+
+   <h1 class="section-title">Sosial Media</h1>
+  <div class="sosmed">
+    <a href="https://www.instagram.com/dzlfnn" target="_blank">
+      <div class="Sosmed-card">
+        <img src="images/download1.jpg" alt="Instagram">
+        <h3>Instagram</h3>
+        <p>Ini adalah akun Instagram saya.</p>
+      </div>
+    </a>
+
+    <div class="Sosmed-card">
+      <img src="images/download.jpg" alt="Project 2">
+      <h3>Sosmed</h3>
+      <p>Coming Soon.</p>
+    </div>
+  </div>
+
+  <!-- Tombol interaksi JavaScript -->
+  <button onclick="tampilkanTanggal()">Tampilkan Tanggal dan Waktu</button>
+  <p id="waktu"></p>
+
+  <script>
+    function tampilkanTanggal() {
+      const sekarang = new Date();
+      document.getElementById('waktu').innerHTML =
+        "Sekarang: " + sekarang.toLocaleString();
+      alert("Tanggal & waktu berhasil ditampilkan!");
+    }
+  </script>
+
+</body>
+</html>

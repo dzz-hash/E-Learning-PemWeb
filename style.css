@@ -1,0 +1,64 @@
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ===== BACKGROUND ===== */
+body {
+  height: 100vh;
+  background: linear-gradient(135deg, #1e1e2f, #3b3b98);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+/* ===== KONTAINER UTAMA ===== */
+.landing-container {
+  text-align: center;
+  animation: fadeIn 1s ease;
+}
+
+.profile-photo {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #fff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.name {
+  font-size: 2em;
+  margin-top: 20px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+/* ===== TOMBOL MASUK ===== */
+.btn-masuk {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 12px 40px;
+  font-size: 1em;
+  color: #fff;
+  background-color: #007bff;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.btn-masuk:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+/* Animasi fade-in */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
