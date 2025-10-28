@@ -1,1 +1,2 @@
-![Tampilan Website](./screenshot.png)
+![Tampilan Website](images/Screenshot.png)
+
